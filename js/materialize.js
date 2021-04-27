@@ -471,7 +471,7 @@ if ($) {
     var isFocused = false;
 
     // Dropdown menu
-    var activates = $("#"+ origin.attr('data-activates'));
+    var activates = $("#"+ origin.attr('data-target'));
 
     function updateOptions() {
       if (origin.data('induration') !== undefined)
@@ -621,7 +621,7 @@ if ($) {
 
       activates.on('mouseleave', function(e){ // Mouse out
         var toEl = e.toElement || e.relatedTarget;
-        if(!$(toEl).closest('.dropdown-button').is(origin)) {
+        if(!$(toEl).closest('.dropdown-trigger').is(origin)) {
           activates.stop(true, true);
           hideDropdown();
           open = false;
@@ -670,7 +670,7 @@ if ($) {
   }; // End dropdown plugin
 
   $(document).ready(function(){
-    $('.dropdown-button').dropdown();
+    $('.dropdown-trigger').dropdown();
   });
 }( jQuery ));;(function($) {
     var _stack = 0,
@@ -1995,7 +1995,7 @@ $(document).ready(function(){
 
       $(this).each(function(){
         var $this = $(this);
-        var menu_id = $("#"+ $this.attr('data-activates'));
+        var menu_id = $("#"+ $this.attr('data-target'));
 
         // Set to width
         if (options.menuWidth != 240) {
@@ -2970,7 +2970,7 @@ $(document).ready(function(){
       // escape double quotes
       var sanitizedLabelHtml = label.replace(/"/g, '&quot;');
 
-      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-activates="select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'"/>');
+      var $newSelect = $('<input type="text" class="select-dropdown" readonly="true" ' + (($select.is(':disabled')) ? 'disabled' : '') + ' data-target="select-options-' + uniqueID +'" value="'+ sanitizedLabelHtml +'"/>');
       $select.before($newSelect);
       $newSelect.before(dropdownIcon);
 

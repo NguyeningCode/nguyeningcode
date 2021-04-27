@@ -1,24 +1,10 @@
 // JavaScript Document
-$(document).ready(function(){
+$(document).ready(function () {
 	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-	$('.modal-trigger').leanModal({
-		dismissible: true, // Modal can be dismissed by clicking outside of the modal
-		opacity: .5, // Opacity of modal background
-		in_duration: 300, // Transition in duration
-		out_duration: 200 // Transition out duration
-	});
-	$('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    });
-	$('.scrollspy').scrollSpy();
-	$('.parallax').parallax();
-	$('.materialboxed').materialbox();
-	$("#submit").click(function(e){
+	$("#submit").click(function (e) {
 		checkPassword();
 	});
-	$('form input').keydown(function(e) {
+	$('form input').keydown(function (e) {
 		if (e.keyCode == 13) {
 			event.preventDefault();
 			checkPassword();
@@ -37,7 +23,7 @@ function checkPassword() {
 		$("#modal").css('background-color', '#2ecc71');
 		$(".modal-footer").addClass("importantGreen");
 		$(".modal-footer a").attr("href", "mission-005.html")
-	} else if ($("#password").val() == ""){
+	} else if ($("#password").val() == "") {
 		$("#resultHeader").text('Error!');
 		$("#resultText").text('You didn\'t enter anything. Try again!');
 		$("#modal").css('background-color', '#e74c3c');
@@ -52,25 +38,25 @@ function checkPassword() {
 
 function setCookie(cname, cvalue, days) {
 	if (days) {
-        var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-     }
-     else var expires = "";
-     document.cookie = cname+"="+cvalue+expires+";";
+		var date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		var expires = "; expires=" + date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = cname + "=" + cvalue + expires + ";";
 }
 
 function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for (var i = 0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+	}
+	return "";
 }

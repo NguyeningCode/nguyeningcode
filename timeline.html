@@ -1,48 +1,85 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Timeline - NguyeningCode</title>
+  <meta charset="utf-8">
+  <title>Timeline - NguyeningCode</title>
 
-<!-- Define all CDNs for Angular, JQuery, Bootstrap -->
+  <!-- Define all CDNs for Angular, JQuery, Bootstrap -->
 
-<!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/materialize.js"></script>
-<!-- <script src="js/materialize.min.js"></script> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <!-- <script src="js/materialize.min.js"></script> -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- Thanks to betul who created the css for the timeline! Here's a link: http://codepen.io/betdream/details/Ifvbi -->
-<link type="text/css" rel="stylesheet" href="css/timeline.css" media="screen,projection">
-<!--<link rel="stylesheet" href="css/style.css">-->
-<link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
-<!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
-<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,300|Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Thanks to betul who created the css for the timeline! Here's a link: http://codepen.io/betdream/details/Ifvbi -->
+  <link type="text/css" rel="stylesheet" href="css/timeline.css" media="screen,projection">
+  <!--<link rel="stylesheet" href="css/style.css">-->
+  <link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
+  <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,300|Roboto+Condensed:400,700,300'
+    rel='stylesheet' type='text/css'>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
+
 <body>
   <div class="navbar thin-text">
-      <nav class="blue darken-7">
-          <div class="nav-wrapper">
-              <a href="index.html" class="brand-logo">NguyeningCode</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a class="dropdown-button" href="#!" data-activates="missions-dropdown">Missions<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <ul id="missions-dropdown" class="dropdown-content">
+    <nav class="blue darken-7">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">NguyeningCode</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="missions-dropdown">Missions<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id="missions-dropdown" class="dropdown-content">
+            <li><a href="mission-index.html">Missions Home</a></li>
+            <li class="divider"></li>
+            <li><a href="missions/mission-001.html">Mission 001</a></li>
+            <li><a href="missions/mission-002.html">Mission 002</a></li>
+            <li><a href="missions/mission-003.html">Mission 003</a></li>
+            <li><a href="missions/mission-004.html">Mission 004</a></li>
+          </ul>
+          <li><a class="dropdown-trigger" href="#!" data-target="projects-dropdown">Projects<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id="projects-dropdown" class="dropdown-content">
+            <li><a href="projects.html">Projects</a></li>
+            <li class="divider"></li>
+
+            <li><a href="road-to-flutter.html">Road To Flutter</a></li>
+            <li><a href="nguyeningcode.html">Website</a></li>
+          </ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="active-page" href="timeline.html">Timeline</a></li>
+          <li><a href="twitch.html">Twitch</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="slide-out" class="sidenav">
+          <li class="logo"><img id="logo" src="img/NguyeningCode-Logo_white.png" alt="NguyeningCode Logo" /></li>
+          <li><a class="hoverable" href="index.html">Home</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header" href="#!" data-target="missions-dropdown-sidebar">Missions<i
+                    class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul id="missions-dropdown-sidebar">
                     <li><a href="mission-index.html">Missions Home</a></li>
                     <li class="divider"></li>
                     <li><a href="missions/mission-001.html">Mission 001</a></li>
@@ -50,280 +87,301 @@
                     <li><a href="missions/mission-003.html">Mission 003</a></li>
                     <li><a href="missions/mission-004.html">Mission 004</a></li>
                   </ul>
-                  <li><a class="dropdown-button" href="#!" data-activates="projects-dropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <ul id="projects-dropdown" class="dropdown-content">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header" href="#!" data-target="projects-dropdown-sidebar">Projects<i
+                    class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul id="projects-dropdown-sidebar">
                     <li><a href="projects.html">Projects</a></li>
                     <li class="divider"></li>
-                    <li><a href="giventake.html">Give-N-Take</a></li>
-                    <li><a href="scrumbutler.html">ScrumButler</a></li>
-                    <li><a href="http://nguyeningcode.com/blog/2017/03/05/web-nguyeningcode-how-i-got-here/">Website</a></li>
+                    <li><a href="road-to-flutter.html">Road To Flutter</a></li>
+                    <li><a href="nguyeningcode.html">Website</a></li>
                   </ul>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a class="active-page" href="timeline.html">Timeline</a></li>
-                  <li><a href="/blog">Blog</a></li>
-              </ul>
-              <a href="index.html" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-              <ul id="slide-out" class="side-nav">
-                  <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
-                  <li><a class="hoverable" href="index.html">Home</a></li>
-                  <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                      <li>
-                        <a class="collapsible-header" href="#!" data-activates="missions-dropdown-sidebar">Missions<i class="material-icons right">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                          <ul id="missions-dropdown-sidebar">
-                            <li><a href="mission-index.html">Missions Home</a></li>
-                            <li class="divider"></li>
-                            <li><a href="missions/mission-001.html">Mission 001</a></li>
-                            <li><a href="missions/mission-002.html">Mission 002</a></li>
-                            <li><a href="missions/mission-003.html">Mission 003</a></li>
-                            <li><a href="missions/mission-004.html">Mission 004</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                      <li>
-                        <a class="collapsible-header" href="#!" data-activates="projects-dropdown-sidebar">Projects<i class="material-icons right">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                          <ul id="projects-dropdown-sidebar">
-                            <li><a href="projects.html">Projects</a></li>
-                            <li class="divider"></li>
-                            <li><a href="giventake.html">Give-N-Take</a></li>
-                            <li><a href="scrumbutler.html">ScrumButler</a></li>
-                            <li><a href="http://nguyeningcode.com/blog/2017/03/05/web-nguyeningcode-how-i-got-here/">Website</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
-                  <li><a class="hoverable active-page" href="timeline.html">Timeline</a></li>
-                  <li><a class="hoverable" href="/blog">Blog</a></li>
-              </ul>
-          </div>
-      </nav>
-  </div>
-<div class="main">
-    <div class="container">
-        <header class="header center white-text">
-            <h1 class="uppercase">Timeline</h1>
-        </header>
-        <div class="row center">
-            <h5 class="header col s12 light white-text">History In The Making</h5>
-        </div>
-          <ul class="timeline">
-            <li class="timeline">
-              <div class="timeline-badge accent-color"><a class="modal-trigger" href="#bornModal"><i class="material-icons white-text">perm_identity</i></a></div>
-              <div class="timeline-panel">
-                <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to see more" href="#bornModal">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Born</h4>
-                    <p><medium class="text-muted">1991</medium></p>
-                  </div>
-                </a>
-              </div>
-              <div id="bornModal" class="modal modal-lg">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="col s12 l4">
-                        <a href="img/babypic.jpg">
-                          <img src="img/babypic.jpg" alt="Me as a baby!" class="responsive-img tooltipped" data-position="bottom" data-delay="50" data-tooltip="Me as a baby!"/>
-                        </a>
-                      </div>
-                      <div class="col s12 l8">
-                        <div class="timeline-desc">
-                          <h5>Fresh-born baby</h5>
-                          <p>Won the race to the egg amongst millions of competitors. Was trapped for 9 months before forcing my way out of my confinement. Took my first breath. Had my first cry and survived the butt slap of doom.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay...?</a>
-                  </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-badge accent-color"><a class="modal-trigger" href="#bthsModal"><i class="material-icons white-text">assignment</i></a></div>
-              <div class="timeline-panel">
-                <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to see more" href="#bthsModal">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Biotechnology High School</h4>
-                    <p><medium class="text-muted">2005-2009</medium></p>
-                  </div>
-                </a>
-              </div>
-              <div id="bthsModal" class="modal modal-lg">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="col s12 l4">
-                        <a href="http://www.bths.mcvsd.org/">
-                          <img src="img/bths.png" alt="Biotechnology High School" class="responsive-img tooltipped" data-position="bottom" data-delay="50" data-tooltip="Biotechnology High School Website"/>
-                        </a>
-                      </div>
-                      <div class="col s12 l8">
-                        <div class="timeline-desc">
-                          <h5>Graduate</h5>
-                          <p>Was part of the first graduating class. Attended first full IB school. Graduated with 86 GPA. Participated in classes that taught college-level biology and taught cutting-edge techniques to prepare for breaking the forefront of biotechnology. Specialized in developmental biology, wrote peer-reviewed level articles, performed many experiments, improved research skills, and perfected lab techniques. Learned techniques like DNA replciation through PCR, gel electrophoresis, and Northern blots.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
-                  </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-badge accent-color"><a class="modal-trigger" href="#rutgersModal"><i class="material-icons white-text">assignment</i></a></div>
-              <div class="timeline-panel">
-                <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to see more" href="#rutgersModal">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Rutgers University</h4>
-                    <p><medium class="text-muted">2009 - 2015</medium></p>
-                  </div>
-                </a>
-              </div>
-              <div id="rutgersModal" class="modal modal-lg">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="col s12 l4">
-                        <a href="http://rutgers.edu">
-                          <img src="img/rutgers.gif" alt="Rutgers University" class="responsive-img tooltipped" data-position="bottom" data-delay="50" data-tooltip="Rutgers website"/>
-                        </a>
-                      </div>
-                      <div class="col s12 l8">
-                        <div class="timeline-desc">
-                          <h5>Student</h5>
-                          <p>Earned my bachelors degree in Information Technology and minored in Computer Science.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
-                  </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-badge accent-color"><a class="modal-trigger" href="#comscoreModal"><i class="material-icons white-text">business</i></a></div>
-              <div class="timeline-panel">
-                <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to see more" href="#comscoreModal">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">comScore</h4>
-                    <p><medium class="text-muted">June - September 2012</medium></p>
-                  </div>
-                </a>
-              </div>
-              <div id="comscoreModal" class="modal modal-lg">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="col s12 l4">
-                        <a href="http://comscore.com">
-                          <img src="img/comScore.png" alt="comScore" class="responsive-img tooltipped" data-position="bottom" data-delay="50" data-tooltip="Model N website"/>
-                        </a>
-                      </div>
-                      <div class="col s12 l8">
-                        <div class="timeline-desc">
-                          <h5>Data Analyst Intern - Automation Project</h5>
-                          <p>Self taught Python and PostgreSQL for job. Worked on creating a group of Python scripts in order to automate the sorting process. Process was responsible for categorizing Android and iOS apps based on data collected from in-house software against data aggregated from spider crawls. Project was shown to have 97% accuracy, but 50% hit rate. Project was shown to reduce workload on the project by 50%.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
-                  </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-badge accent-color"><a class="modal-trigger" href="#ecaasuModal"><i class="material-icons white-text">business</i></a></div>
-              <div class="timeline-panel">
-                <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to see more" href="#ecaasuModal">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">ECAASU</h4>
-                    <p><medium class="text-muted">2015-2016</medium></p>
-                  </div>
-                </a>
-              </div>
-              <div id="ecaasuModal" class="modal modal-lg">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="col s12 l4">
-                        <a href="http://ecaasu2016.org">
-                          <img src="img/ecaasu.png" alt="ECAASU 2016" class="responsive-img tooltipped" data-position="bottom" data-delay="50" data-tooltip="ECAASU website"/>
-                        </a>
-                      </div>
-                      <div class="col s12 l8">
-                        <div class="timeline-desc">
-                          <h5>Lead Web Developer</h5>
-                          <p>Volunteered as the head web developer for the ECAASU 2016 site. Worked closely with a team of people to create site for organization. This included a countdown counter, a calendar widget, and a mobile-ready site built using Bootstrap. Was repsonsible for choosing and implementing the design as well as the general layout of the site. Site was created with the help of a template and was enhanced with custom code. Left after several months due to time constraints.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
-                  </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-badge accent-color"><a class="modal-trigger" href="#modelnModal"><i class="material-icons white-text">business</i></a></div>
-              <div class="timeline-panel">
-                <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to see more" href="#modelnModal">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Model N</h4>
-                    <p><medium class="text-muted">2015 - Present</medium></p>
-                  </div>
-                </a>
-              </div>
-              <div id="modelnModal" class="modal modal-lg">
-                  <div class="modal-content">
-                    <div class="row">
-                      <div class="col s12 l4">
-                        <a href="http://www.modeln.com">
-                          <img src="img/modeln.png" alt="Model N" class="responsive-img tooltipped" data-position="bottom" data-delay="50" data-tooltip="Model N website"/>
-                        </a>
-                      </div>
-                      <div class="col s12 l8">
-                        <div class="timeline-desc">
-                          <h5>Salesforce Developer - Backend</h5>
-                          <p>I helped work on the back end part of the software by developing new features, creating custom code for customers, and integrating third party software into Salesforce. Worked mostly on back end code, but has experience with working on smaller front end issues. Was also in charge of debugging issues in the code base and refactoring sections of code to work with new features. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
-                  </div>
-              </div>
-            </li>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
+          <li><a class="hoverable active-page" href="timeline.html">Timeline</a></li>
+          <li><a class="hoverable" href="twitch.html">Twitch</a></li>
         </ul>
-    </div>
-</div>
-<footer class="page-footer blue darken-7">
-  <div class="container">
-    <div class="row">
-      <div class="col m6 s12">
-        <h5 class="white-text">Get In Touch</h5>
-        <p class="grey-text text-lighten-4"><a href="mailto:jnguyen7410@gmail.com">jnguyen7410@gmail.com</a></p>
-        <p class="grey-text text-lighten-4"><a href="tel:+16693428101">(669) 342-8101</a></p>
       </div>
-      <div class="col m6 s12">
-        <h5 class="white-text">Find Me</h5>
-        <a href="https://github.com/jnguyen7410"><img id="github" src="img/github.png" alt="Github" class="responsive-img"></a>
-        <a href="https://www.linkedin.com/in/jonathan-nguyen-57b00161"><img id="linkedin" src="img/linkedin.png" alt="LinkedIn" class="responsive-img"></a>
-      </div>
-    </div>
+    </nav>
   </div>
-  <div class="footer-copyright">
+  <div class="main">
     <div class="container">
-    © 2016 NguyeningCode. All Rights Reserved.
+      <header class="header center white-text">
+        <h1 class="uppercase">Timeline</h1>
+      </header>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">History In The Making</h5>
+      </div>
+      <ul class="timeline">
+        <li class="timeline">
+          <div class="timeline-badge accent-color"><a class="modal-trigger" href="#bornModal"><i
+                class="material-icons white-text">perm_identity</i></a></div>
+          <div class="timeline-panel">
+            <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50"
+              data-tooltip="Click to see more" href="#bornModal">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Born</h4>
+                <p>
+                  <medium class="text-muted">1991</medium>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div id="bornModal" class="modal modal-lg">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 l4">
+                  <a href="img/babypic.jpg">
+                    <img src="img/babypic.jpg" alt="Me as a baby!" class="responsive-img tooltipped"
+                      data-position="bottom" data-delay="50" data-tooltip="Me as a baby!" />
+                  </a>
+                </div>
+                <div class="col s12 l8">
+                  <div class="timeline-desc">
+                    <h5>Fresh-born baby</h5>
+                    <p>Won the race to the egg amongst millions of competitors. Was trapped for 9 months before forcing
+                      my way out of my confinement. Took my first breath. Had my first cry and survived the butt slap of
+                      doom.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay...?</a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge accent-color"><a class="modal-trigger" href="#bthsModal"><i
+                class="material-icons white-text">assignment</i></a></div>
+          <div class="timeline-panel">
+            <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50"
+              data-tooltip="Click to see more" href="#bthsModal">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Biotechnology High School</h4>
+                <p>
+                  <medium class="text-muted">2005-2009</medium>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div id="bthsModal" class="modal modal-lg">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 l4">
+                  <a href="http://www.bths.mcvsd.org/">
+                    <img src="img/bths.png" alt="Biotechnology High School" class="responsive-img tooltipped"
+                      data-position="bottom" data-delay="50" data-tooltip="Biotechnology High School Website" />
+                  </a>
+                </div>
+                <div class="col s12 l8">
+                  <div class="timeline-desc">
+                    <h5>Graduate</h5>
+                    <p>Was part of the first graduating class. Attended first full IB school. Graduated with 86 GPA.
+                      Participated in classes that taught college-level biology and taught cutting-edge techniques to
+                      prepare for breaking the forefront of biotechnology. Specialized in developmental biology, wrote
+                      peer-reviewed level articles, performed many experiments, improved research skills, and perfected
+                      lab techniques. Learned techniques like DNA replciation through PCR, gel electrophoresis, and
+                      Northern blots.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge accent-color"><a class="modal-trigger" href="#rutgersModal"><i
+                class="material-icons white-text">assignment</i></a></div>
+          <div class="timeline-panel">
+            <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50"
+              data-tooltip="Click to see more" href="#rutgersModal">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Rutgers University</h4>
+                <p>
+                  <medium class="text-muted">2009 - 2015</medium>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div id="rutgersModal" class="modal modal-lg">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 l4">
+                  <a href="http://rutgers.edu">
+                    <img src="img/rutgers.gif" alt="Rutgers University" class="responsive-img tooltipped"
+                      data-position="bottom" data-delay="50" data-tooltip="Rutgers website" />
+                  </a>
+                </div>
+                <div class="col s12 l8">
+                  <div class="timeline-desc">
+                    <h5>Student</h5>
+                    <p>Earned my bachelors degree in Information Technology and minored in Computer Science.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge accent-color"><a class="modal-trigger" href="#comscoreModal"><i
+                class="material-icons white-text">business</i></a></div>
+          <div class="timeline-panel">
+            <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50"
+              data-tooltip="Click to see more" href="#comscoreModal">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">comScore</h4>
+                <p>
+                  <medium class="text-muted">June - September 2012</medium>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div id="comscoreModal" class="modal modal-lg">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 l4">
+                  <a href="http://comscore.com">
+                    <img src="img/comScore.png" alt="comScore" class="responsive-img tooltipped" data-position="bottom"
+                      data-delay="50" data-tooltip="Model N website" />
+                  </a>
+                </div>
+                <div class="col s12 l8">
+                  <div class="timeline-desc">
+                    <h5>Data Analyst Intern - Automation Project</h5>
+                    <p>Self taught Python and PostgreSQL for job. Worked on creating a group of Python scripts in order
+                      to automate the sorting process. Process was responsible for categorizing Android and iOS apps
+                      based on data collected from in-house software against data aggregated from spider crawls. Project
+                      was shown to have 97% accuracy, but 50% hit rate. Project was shown to reduce workload on the
+                      project by 50%.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge accent-color"><a class="modal-trigger" href="#ecaasuModal"><i
+                class="material-icons white-text">business</i></a></div>
+          <div class="timeline-panel">
+            <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50"
+              data-tooltip="Click to see more" href="#ecaasuModal">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">ECAASU</h4>
+                <p>
+                  <medium class="text-muted">2015-2016</medium>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div id="ecaasuModal" class="modal modal-lg">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 l4">
+                  <a href="http://ecaasu2016.org">
+                    <img src="img/ecaasu.png" alt="ECAASU 2016" class="responsive-img tooltipped" data-position="bottom"
+                      data-delay="50" data-tooltip="ECAASU website" />
+                  </a>
+                </div>
+                <div class="col s12 l8">
+                  <div class="timeline-desc">
+                    <h5>Lead Web Developer</h5>
+                    <p>Volunteered as the head web developer for the ECAASU 2016 site. Worked closely with a team of
+                      people to create site for organization. This included a countdown counter, a calendar widget, and
+                      a mobile-ready site built using Bootstrap. Was repsonsible for choosing and implementing the
+                      design as well as the general layout of the site. Site was created with the help of a template and
+                      was enhanced with custom code. Left after several months due to time constraints.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge accent-color"><a class="modal-trigger" href="#modelnModal"><i
+                class="material-icons white-text">business</i></a></div>
+          <div class="timeline-panel">
+            <a class="waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-delay="50"
+              data-tooltip="Click to see more" href="#modelnModal">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Model N</h4>
+                <p>
+                  <medium class="text-muted">2015 - Present</medium>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div id="modelnModal" class="modal modal-lg">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col s12 l4">
+                  <a href="http://www.modeln.com">
+                    <img src="img/modeln.png" alt="Model N" class="responsive-img tooltipped" data-position="bottom"
+                      data-delay="50" data-tooltip="Model N website" />
+                  </a>
+                </div>
+                <div class="col s12 l8">
+                  <div class="timeline-desc">
+                    <h5>Salesforce Developer - Backend</h5>
+                    <p>I helped work on the back end part of the software by developing new features, creating custom
+                      code for customers, and integrating third party software into Salesforce. Worked mostly on back
+                      end code, but has experience with working on smaller front end issues. Was also in charge of
+                      debugging issues in the code base and refactoring sections of code to work with new features. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Okay</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-</footer
-</body>
+  <footer class="page-footer blue darken-7">
+    <div class="container">
+      <div class="row">
+        <div class="col m6 s12">
+          <h5 class="white-text">Get In Touch</h5>
+          <p class="grey-text text-lighten-4"><a href="mailto:jnguyen7410@gmail.com">jnguyen7410@gmail.com</a></p>
+          <p class="grey-text text-lighten-4"><a href="tel:+16693428101">(669) 342-8101</a></p>
+        </div>
+        <div class="col m6 s12">
+          <h5 class="white-text">Find Me</h5>
+          <a href="https://github.com/jnguyen7410"><img id="github" src="img/github.png" alt="Github"
+              class="responsive-img"></a>
+          <a href="https://www.linkedin.com/in/jonathan-nguyen-57b00161"><img id="linkedin" src="img/linkedin.png"
+              alt="LinkedIn" class="responsive-img"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 NguyeningCode. All Rights Reserved.
+      </div>
+    </div>
+  </footer </body>
+
 </html>

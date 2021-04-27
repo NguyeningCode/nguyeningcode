@@ -7,10 +7,10 @@ $(document).ready(function(){
 		in_duration: 300, // Transition in duration
 		out_duration: 200, // Transition out duration
 	});
-	$('.button-collapse').sideNav({
+	$('.sidenav').sidenav({
       menuWidth: 300, // Default is 240
       edge: 'left', // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      closeOnClick: true // Closes sidenav on <a> clicks, useful for Angular/Meteor
     });
 	$('.scrollspy').scrollSpy();
 	$('.parallax').parallax();

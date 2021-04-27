@@ -2687,7 +2687,7 @@ ul li {
   box-shadow: none !important;
 }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .sidenav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -4111,19 +4111,19 @@ nav .nav-wrapper {
 }
 
 @media only screen and (min-width: 993px) {
-  nav a.button-collapse {
+  nav a.sidenav {
     display: none;
   }
 }
 
-nav .button-collapse {
+nav .sidenav {
   float: left;
   position: relative;
   z-index: 1;
   height: 56px;
 }
 
-nav .button-collapse i {
+nav .sidenav i {
   font-size: 2.7rem;
   height: 56px;
   line-height: 56px;
@@ -4252,7 +4252,7 @@ nav .input-field label.active {
 }
 
 @media only screen and (min-width: 601px) {
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  nav, nav .nav-wrapper i, nav a.sidenav, nav a.sidenav i {
     height: 64px;
     line-height: 64px;
   }
@@ -5339,19 +5339,19 @@ a.waves-effect .waves-ripple {
   padding: 2rem;
 }
 
-.side-nav .collapsible,
-.side-nav.fixed .collapsible {
+.sidenav .collapsible,
+.sidenav.fixed .collapsible {
   border: none;
   box-shadow: none;
 }
 
-.side-nav .collapsible li,
-.side-nav.fixed .collapsible li {
+.sidenav .collapsible li,
+.sidenav.fixed .collapsible li {
   padding: 0;
 }
 
-.side-nav .collapsible-header,
-.side-nav.fixed .collapsible-header {
+.sidenav .collapsible-header,
+.sidenav.fixed .collapsible-header {
   background-color: transparent;
   border: none;
   line-height: inherit;
@@ -5359,24 +5359,24 @@ a.waves-effect .waves-ripple {
   padding: 0 30px;
 }
 
-.side-nav .collapsible-header:hover,
-.side-nav.fixed .collapsible-header:hover {
+.sidenav .collapsible-header:hover,
+.sidenav.fixed .collapsible-header:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.side-nav .collapsible-header i,
-.side-nav.fixed .collapsible-header i {
+.sidenav .collapsible-header i,
+.sidenav.fixed .collapsible-header i {
   line-height: inherit;
 }
 
-.side-nav .collapsible-body,
-.side-nav.fixed .collapsible-body {
+.sidenav .collapsible-body,
+.sidenav.fixed .collapsible-body {
   border: 0;
   background-color: #fff;
 }
 
-.side-nav .collapsible-body li a,
-.side-nav.fixed .collapsible-body li a {
+.sidenav .collapsible-body li a,
+.sidenav.fixed .collapsible-body li a {
   padding: 0 37.5px 0 45px;
 }
 
@@ -6663,7 +6663,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-left: 2px solid #ea4a4f;
 }
 
-.side-nav {
+.sidenav {
   position: fixed;
   width: 240px;
   left: 0;
@@ -6687,7 +6687,7 @@ input[type=range]:focus::-ms-fill-upper {
           transform: translateX(-105%);
 }
 
-.side-nav.right-aligned {
+.sidenav.right-aligned {
   right: 0;
   -webkit-transform: translateX(105%);
           transform: translateX(105%);
@@ -6696,20 +6696,20 @@ input[type=range]:focus::-ms-fill-upper {
           transform: translateX(100%);
 }
 
-.side-nav .collapsible {
+.sidenav .collapsible {
   margin: 0;
 }
 
-.side-nav li {
+.sidenav li {
   float: none;
   line-height: 64px;
 }
 
-.side-nav li.active {
+.sidenav li.active {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.side-nav a {
+.sidenav a {
   color: #444;
   display: block;
   font-size: 1rem;
@@ -6718,27 +6718,27 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 0 30px;
 }
 
-.side-nav a:hover {
+.sidenav a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
+.sidenav a.btn, .sidenav a.btn-large, .sidenav a.btn-large, .sidenav a.btn-flat, .sidenav a.btn-floating {
   margin: 10px 15px;
 }
 
-.side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
+.sidenav a.btn, .sidenav a.btn-large, .sidenav a.btn-large, .sidenav a.btn-floating {
   color: #fff;
 }
 
-.side-nav a.btn-flat {
+.sidenav a.btn-flat {
   color: #343434;
 }
 
-.side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
+.sidenav a.btn:hover, .sidenav a.btn-large:hover, .sidenav a.btn-large:hover {
   background-color: #2bbbad;
 }
 
-.side-nav a.btn-floating:hover {
+.sidenav a.btn-floating:hover {
   background-color: #26a69a;
 }
 
@@ -6750,42 +6750,42 @@ input[type=range]:focus::-ms-fill-upper {
   z-index: 998;
 }
 
-.side-nav.fixed a {
+.sidenav.fixed a {
   display: block;
   padding: 0 30px;
   color: #444;
 }
 
-.side-nav.fixed {
+.sidenav.fixed {
   left: 0;
   -webkit-transform: translateX(0);
           transform: translateX(0);
   position: fixed;
 }
 
-.side-nav.fixed.right-aligned {
+.sidenav.fixed.right-aligned {
   right: 0;
   left: auto;
 }
 
 @media only screen and (max-width: 992px) {
-  .side-nav.fixed {
+  .sidenav.fixed {
     -webkit-transform: translateX(-105%);
             transform: translateX(-105%);
   }
-  .side-nav.fixed.right-aligned {
+  .sidenav.fixed.right-aligned {
     -webkit-transform: translateX(105%);
             transform: translateX(105%);
   }
 }
 
-.side-nav .collapsible-body li.active,
-.side-nav.fixed .collapsible-body li.active {
+.sidenav .collapsible-body li.active,
+.sidenav.fixed .collapsible-body li.active {
   background-color: #ee6e73;
 }
 
-.side-nav .collapsible-body li.active a,
-.side-nav.fixed .collapsible-body li.active a {
+.sidenav .collapsible-body li.active a,
+.sidenav.fixed .collapsible-body li.active a {
   color: #fff;
 }
 

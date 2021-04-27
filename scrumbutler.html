@@ -1,48 +1,86 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>ScrumButler - NguyeningCode</title>
+  <meta charset="utf-8">
+  <title>ScrumButler - NguyeningCode</title>
 
-<!-- Define all CDNs for Angular, JQuery, Bootstrap -->
+  <!-- Define all CDNs for Angular, JQuery, Bootstrap -->
 
-<!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/materialize.js"></script>
-<!-- <script src="js/materialize.min.js"></script> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <!-- <script src="js/materialize.min.js"></script> -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<!-- CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- Thanks to betul who created the css for the timeline! Here's a link: http://codepen.io/betdream/details/Ifvbi -->
-<link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
-<!--<link rel="stylesheet" href="css/style.css">-->
-<link type="text/css" rel="stylesheet" href="css/project-landing.css" media="screen,projection">
-<!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
-<!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
-<!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,300|Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Thanks to betul who created the css for the timeline! Here's a link: http://codepen.io/betdream/details/Ifvbi -->
+  <link type="text/css" rel="stylesheet" href="css/test.css" media="screen,projection">
+  <!--<link rel="stylesheet" href="css/style.css">-->
+  <link type="text/css" rel="stylesheet" href="css/project-landing.css" media="screen,projection">
+  <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/> -->
+  <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,300|Roboto+Condensed:400,700,300'
+    rel='stylesheet' type='text/css'>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
+
 <body>
   <div class="navbar thin-text">
-      <nav class="blue darken-7">
-          <div class="nav-wrapper">
-              <a href="index.html" class="brand-logo">NguyeningCode</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a class="dropdown-button" href="#!" data-activates="missions-dropdown">Missions<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <ul id="missions-dropdown" class="dropdown-content">
+    <nav class="blue darken-7">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">NguyeningCode</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="active-page" href="index.html">Home</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="missions-dropdown">Missions<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id="missions-dropdown" class="dropdown-content">
+            <li><a href="mission-index.html">Missions Home</a></li>
+            <li class="divider"></li>
+            <li><a href="missions/mission-001.html">Mission 001</a></li>
+            <li><a href="missions/mission-002.html">Mission 002</a></li>
+            <li><a href="missions/mission-003.html">Mission 003</a></li>
+            <li><a href="missions/mission-004.html">Mission 004</a></li>
+          </ul>
+          <li><a class="dropdown-trigger" href="#!" data-target="projects-dropdown">Projects<i
+                class="material-icons right">arrow_drop_down</i></a></li>
+          <ul id="projects-dropdown" class="dropdown-content">
+            <li><a href="projects.html">Projects</a></li>
+            <li class="divider"></li>
+
+            <li><a href="road-to-flutter.html">Road To Flutter</a></li>
+            <li><a href="nguyeningcode.html">Website</a></li>
+          </ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="twitch.html">Twitch</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="slide-out" class="sidenav">
+          <li class="logo"><img id="logo" src="img/NguyeningCode-Logo_white.png" alt="NguyeningCode Logo" /></li>
+          <li><a class="active-page hoverable" href="index.html">Home</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header" href="#!" data-target="missions-dropdown-sidebar">Missions<i
+                    class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul id="missions-dropdown-sidebar">
                     <li><a href="mission-index.html">Missions Home</a></li>
                     <li class="divider"></li>
                     <li><a href="missions/mission-001.html">Mission 001</a></li>
@@ -50,165 +88,150 @@
                     <li><a href="missions/mission-003.html">Mission 003</a></li>
                     <li><a href="missions/mission-004.html">Mission 004</a></li>
                   </ul>
-                  <li><a class="dropdown-button active-page" href="#!" data-activates="projects-dropdown">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
-                  <ul id="projects-dropdown" class="dropdown-content">
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header" href="#!" data-target="projects-dropdown-sidebar">Projects<i
+                    class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body">
+                  <ul id="projects-dropdown-sidebar">
                     <li><a href="projects.html">Projects</a></li>
                     <li class="divider"></li>
-                    <li><a href="giventake.html">Give-N-Take</a></li>
-                    <li><a class="active-page" href="scrumbutler.html">ScrumButler</a></li>
-                    <li><a href="http://nguyeningcode.com/blog/2017/03/05/web-nguyeningcode-how-i-got-here/">Website</a></li>
+                    <li><a href="road-to-flutter.html">Road To Flutter</a></li>
+                    <li><a href="nguyeningcode.html">Website</a></li>
                   </ul>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="timeline.html">Timeline</a></li>
-                  <li><a href="/blog">Blog</a></li>
-              </ul>
-              <a href="index.html" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-              <ul id="slide-out" class="side-nav">
-                  <li class="logo"><img id="logo" src="img/logo.png" alt="NguyeningCode Logo"/></li>
-                  <li><a class="hoverable" href="index.html">Home</a></li>
-                  <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                      <li>
-                        <a class="collapsible-header" href="#!" data-activates="missions-dropdown-sidebar">Missions<i class="material-icons right">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                          <ul id="missions-dropdown-sidebar">
-                            <li><a href="mission-index.html">Missions Home</a></li>
-                            <li class="divider"></li>
-                            <li><a href="missions/mission-001.html">Mission 001</a></li>
-                            <li><a href="missions/mission-002.html">Mission 002</a></li>
-                            <li><a href="missions/mission-003.html">Mission 003</a></li>
-                            <li><a href="missions/mission-004.html">Mission 004</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="no-padding">
-                    <ul class="collapsible collapsible-accordion">
-                      <li>
-                        <a class="collapsible-header active-page" href="#!" data-activates="projects-dropdown-sidebar">Projects<i class="material-icons right">arrow_drop_down</i></a>
-                        <div class="collapsible-body">
-                          <ul id="projects-dropdown-sidebar">
-                            <li><a href="projects.html">Projects</a></li>
-                            <li class="divider"></li>
-                            <li><a href="giventake.html">Give-N-Take</a></li>
-                            <li><a class="active-page" href="scrumbutler.html">ScrumButler</a></li>
-                            <li><a href="http://nguyeningcode.com/blog/2017/03/05/web-nguyeningcode-how-i-got-here/">Website</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
-                  <li><a class="hoverable" href="timeline.html">Timeline</a></li>
-                  <li><a class="hoverable" href="/blog">Blog</a></li>
-              </ul>
-          </div>
-      </nav>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li><a class="hoverable" href="portfolio.html">Portfolio</a></li>
+          <li><a class="hoverable" href="timeline.html">Timeline</a></li>
+          <li><a class="hoverable" href="twitch.html">Twitch</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
-<div class="container">
-  <div class="row">
-    <div class="col s12 m6">
-      <header class="header center white-text" style="font-family: 'Roboto Thin'" >
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <header class="header center white-text" style="font-family: 'Roboto Thin'">
           <h1 class="uppercase condensed">ScrumButler</h1>
-      </header>
-    </div>
-    <div class="col s12 m3">
-        <a class="info" href="https://github.com/jnguyen7410/scrumbutler"><img id="GnT-github-link" src="img/github.png" alt="Github" class="responsive-img"></a>
-    </div>
-    <div class="col s12 m3">
-        <a class="info" href="#"><p>What's up, sir?</p></a>
+        </header>
+      </div>
+      <div class="col s12 m3">
+        <a class="info" href="https://github.com/jnguyen7410/scrumbutler"><img id="GnT-github-link" src="img/github.png"
+            alt="Github" class="responsive-img"></a>
+      </div>
+      <div class="col s12 m3">
+        <a class="info" href="#">
+          <p>What's up, sir?</p>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-<div class="parallax-container s12" id="GnT-parallax">
-      <div class="parallax"><img src="img/bg.jpg" alt="Give-N-Take parallax"></div>
-</div>
-<div class="main">
-      <div class="row on-row">
-          <div class="col s12 m6">
-            <div class="left-picture-block on-row-text">
-              <h2>Picture goes here</h2>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="right-text-block on-row-text">
-              <h2>Never Miss An Update</h2>
-              <p class="white-text">
-                You're already busy enough with your work. Why waste time remembering every little detail of your day? Let ScrumButler help you keep track so you can spend less time recalling updates and spend more time doing what you love.
-              </p>
-            </div>
-          </div>
+  <div class="parallax-container s12" id="GnT-parallax">
+    <div class="parallax"><img src="img/bg.jpg" alt="Give-N-Take parallax"></div>
+  </div>
+  <div class="main">
+    <div class="row on-row">
+      <div class="col s12 m6">
+        <div class="left-picture-block on-row-text">
+          <h2>Picture goes here</h2>
+        </div>
       </div>
-      <div class="row off-row">
-          <div class="col s12 m6">
-            <div class="left-text-block off-row-text">
-              <h2>Importance Is Key</h2>
-              <p>
-                Certain things are more important than others, so why hide it? Add a blocker tag to your update to raise a flag. We'll make it highly visible to others and make sure you're heard. Because who wants to get stuck being blocked?
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="right-picture-block off-row-text">
-              <h2>Picture goes here</h2>
-            </div>
-          </div>
+      <div class="col s12 m6">
+        <div class="right-text-block on-row-text">
+          <h2>Never Miss An Update</h2>
+          <p class="white-text">
+            You're already busy enough with your work. Why waste time remembering every little detail of your day? Let
+            ScrumButler help you keep track so you can spend less time recalling updates and spend more time doing what
+            you love.
+          </p>
+        </div>
       </div>
-      <div class="row on-row">
-          <div class="col s12 m6">
-            <div class="left-picture-block on-row-text">
-              <h2>Picture goes here</h2>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="right-text-block on-row-text">
-              <h2>All In One Place</h2>
-              <p class="white-text">
-              You're probably using Slack to talk with each other all the time (why else would you bother looking at a Slack bot?!) and you probably have your own set of ticket tracking system. Why not have them all in one place? With future plans on integrating with Atlassian JIRA and other ticketing systems, updating your tickets is as easy as sending out an email. Plus, with it's own tracking system that makes it easy to see what's on your plate and who's involved, you can easily have the same advantage as you get with professional ticketing softwares even if you don't have the budget for it.
-              </p>
-            </div>
-          </div>
+    </div>
+    <div class="row off-row">
+      <div class="col s12 m6">
+        <div class="left-text-block off-row-text">
+          <h2>Importance Is Key</h2>
+          <p>
+            Certain things are more important than others, so why hide it? Add a blocker tag to your update to raise a
+            flag. We'll make it highly visible to others and make sure you're heard. Because who wants to get stuck
+            being blocked?
+          </p>
+        </div>
       </div>
-		<div class="row off-row">
+      <div class="col s12 m6">
+        <div class="right-picture-block off-row-text">
+          <h2>Picture goes here</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row on-row">
+      <div class="col s12 m6">
+        <div class="left-picture-block on-row-text">
+          <h2>Picture goes here</h2>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="right-text-block on-row-text">
+          <h2>All In One Place</h2>
+          <p class="white-text">
+            You're probably using Slack to talk with each other all the time (why else would you bother looking at a
+            Slack bot?!) and you probably have your own set of ticket tracking system. Why not have them all in one
+            place? With future plans on integrating with Atlassian JIRA and other ticketing systems, updating your
+            tickets is as easy as sending out an email. Plus, with it's own tracking system that makes it easy to see
+            what's on your plate and who's involved, you can easily have the same advantage as you get with professional
+            ticketing softwares even if you don't have the budget for it.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row off-row">
       <div class="col s12">
         <div class="left-text-block off-row-text">
           <h2>Headline Description</h2>
         </div>
       </div>
     </div>
-</div>
-<div class="parallax-container s12" id="GnT-parallax">
-      <div class="parallax"><img src="img/bg.jpg" alt="Give-N-Take parallax 2"></div>
-</div>
-<div class="row on-row">
-  <div class="col s12">
-    <div class="on-row-text">
-      <h2>Download now!</h2>
-      <h3 style="text-align: center;"><a href="#">Slack Link</a></h3>
-    </div>
   </div>
-</div>
-<footer class="page-footer blue darken-7">
-  <div class="container">
-    <div class="row">
-      <div class="col m6 s12">
-        <h5 class="white-text">Get In Touch</h5>
-        <p class="grey-text text-lighten-4"><a href="mailto:jnguyen7410@gmail.com">jnguyen7410@gmail.com</a></p>
-        <p class="grey-text text-lighten-4"><a href="tel:+16693428101">(669) 342-8101</a></p>
-      </div>
-      <div class="col m6 s12">
-        <h5 class="white-text">Find Me</h5>
-        <a href="https://github.com/jnguyen7410"><img id="github" src="img/github.png" alt="Github" class="responsive-img"></a>
-        <a href="https://www.linkedin.com/in/jonathan-nguyen-57b00161"><img id="linkedin" src="img/linkedin.png" alt="LinkedIn" class="responsive-img"></a>
+  <div class="parallax-container s12" id="GnT-parallax">
+    <div class="parallax"><img src="img/bg.jpg" alt="Give-N-Take parallax 2"></div>
+  </div>
+  <div class="row on-row">
+    <div class="col s12">
+      <div class="on-row-text">
+        <h2>Download now!</h2>
+        <h3 style="text-align: center;"><a href="#">Slack Link</a></h3>
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
+  <footer class="page-footer blue darken-7">
     <div class="container">
-    © 2016 NguyeningCode. All Rights Reserved.
+      <div class="row">
+        <div class="col m6 s12">
+          <h5 class="white-text">Get In Touch</h5>
+          <p class="grey-text text-lighten-4"><a href="mailto:jnguyen7410@gmail.com">jnguyen7410@gmail.com</a></p>
+          <p class="grey-text text-lighten-4"><a href="tel:+16693428101">(669) 342-8101</a></p>
+        </div>
+        <div class="col m6 s12">
+          <h5 class="white-text">Find Me</h5>
+          <a href="https://github.com/jnguyen7410"><img id="github" src="img/github.png" alt="Github"
+              class="responsive-img"></a>
+          <a href="https://www.linkedin.com/in/jonathan-nguyen-57b00161"><img id="linkedin" src="img/linkedin.png"
+              alt="LinkedIn" class="responsive-img"></a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer
-</body>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 NguyeningCode. All Rights Reserved.
+      </div>
+    </div>
+  </footer </body>
+
 </html>

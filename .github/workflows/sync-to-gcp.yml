@@ -14,8 +14,11 @@ jobs:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
       - run: gsutil -m rsync -d -c -r . gs://nguyeningcode.com
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://nguyeningcode.com/*.html
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://nguyeningcode.com/**/*.html
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/js/*.js
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/js/missions/*.js
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/css/*.css
-      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/img/*.png
-      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/img/*.jpg
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/font/**
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/font/**/**
+      - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/img/**

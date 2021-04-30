@@ -8,12 +8,12 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
-      - run: gsutil -m rsync -d -c -r public gs://nguyeningcode.com
+      - run: gsutil -m rsync -d -c -r gs://nguyeningcode.com
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=3600" gs://nguyeningcode.com/**/*.html
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/js/*.js
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/css/*.css

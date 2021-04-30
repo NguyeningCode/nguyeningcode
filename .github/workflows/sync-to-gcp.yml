@@ -22,3 +22,11 @@ jobs:
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/font/**
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/font/**/**
       - run: gsutil -m setmeta -h "Cache-Control:public, max-age=31536000" gs://nguyeningcode.com/img/**
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/*.html
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/**/*.html
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/js/*.js
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/js/missions/*.js
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/css/*.css
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/font/**
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/font/**/**
+      - run: gsutil -m acl ch -u AllUsers:R gs://nguyeningcode.com/img/**

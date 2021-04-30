@@ -11,7 +11,6 @@ jobs:
       - uses: actions/checkout@v1
         with:
           ref: refs/head/master
-          fetch-depth: 1
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
           service_account_email: ${{ secrets.GCP_SA_EMAIL }}

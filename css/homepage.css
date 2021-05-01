@@ -24,18 +24,17 @@
 }
 
 #website-img {
-  width: 25vw;
-  height: auto;
+  height: 85%;
+  width: auto;
   bottom: 0;
   right: 0;
   position: absolute;
   display: block;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .card-image {
     height: 125px !important;
-    /*height: auto;*/
     display: block !important;
     position: absolute;
     overflow: auto;
@@ -134,20 +133,9 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 980px) {
-  #website-img {
-    width: 35vw;
-  }
-
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
     /*height: 25vh;*/
-  }
-
-  .hover-header
-
-    #test-parallax {
-    height: 30vh;
-    margin-bottom: 5px;
   }
 
   .card-full-image {
@@ -160,42 +148,13 @@
 @media (min-width: 980px) {
   .card {
     margin: 0 0.1rem 0.05rem 0 !important;
-    /*height: 23vh;*/
   }
-
-  #test-parallax {
-    height: 30vh;
-    margin-bottom: 5px;
-  }
-
 }
 
 @media (max-width: 600px) {
-  #website-img {
-    width: 55vw;
-  }
-
   .card {
-    /*height: 28vh;*/
     margin: 10px 0 0 0;
   }
-
-/*
-  #test-parallax {
-    height: 30vh;
-    margin-bottom: 5px;
-  }
-
-  #timeline-img {
-    height: auto;
-    width: 95vw;
-    top: 15%;
-  }
-
-  #website-img {
-    height: 20vh;
-  }*/
-
 }
 
 .transparent {
@@ -215,16 +174,6 @@
 .row {
   margin-bottom: 0.25rem !important;
 }
-
-/*.card {
-  width: 100%;
-}*/
-
-
- /*span {
-   text-align: center;
-   text-decoration: none;
- }*/
 
 #intro-card {
   font-weight: 100;

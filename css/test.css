@@ -24,7 +24,7 @@ body {
   flex-direction: column;
 }
 
-.main {
+.main, .container {
   flex: 1 0 "auto";
 }
 
@@ -49,14 +49,20 @@ table tr td {
   letter-spacing: 2px;
 }
 
-/*.logo {
-  height: 10vh;
-}*/
-
 #logo {
   height: 10vh;
   display: block;
   margin: auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.twitch-affiliate-img {
+  display: flex;
+  justify-content: center;
 }
 
 .background {
@@ -64,40 +70,24 @@ table tr td {
 }
 
 .dropdown-content {
-  backgrount-color: #00202B !important;
+  background-color: #00202B !important;
 }
-
-/*.transparent {
-  background-color: transparent;
-  box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0) !important;
-  opacity: 0;
-}*/
-
-/*.no-shadow {
-  box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0) !important;
-}*/
-
 
 .text {
   color: #507D7A !important;
 }
 
-/*
-.col {
-  padding: 0 0.15rem !important;
-}
-
-.row {
-  margin-bottom: 0.25rem !important;
-}
-*/
-
 .card {
   width: 100%;
+  border-radius: 8px !important;
+}
+
+.dark-card { 
+  border-radius: 8px !important;
 }
 
 .dark-card, .dark-card-action {
-  background-color: #546e7a !important;
+  background-color: #011d27 !important;
   color: white;
 }
 
@@ -151,16 +141,17 @@ table tr td {
    background-color: #6B30EA !important;
  }
 
-
  #profilepic {
-  display: block;
-	width: 50%;
-  max-width: 256px;
+  object-fit: cover;
+  object-position: 20% 20%;
+  display: flex;
+  justify-content: center;
+  width: 256px;
+  height: 256px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 3em;
   position: relative;
-  opacity: 0;
  }
 
  #github, #linkedin {
@@ -194,9 +185,7 @@ table tr td {
 
 #portfolio-container {
   position: relative;
-  /*top: -175px;*/
-  /*top: -18vh;*/
-  /*top: -130px; //for mobile*/
+  top: -130px;
 }
 
 footer p a {
@@ -211,7 +200,6 @@ footer p a {
 
 .thin-text {
   font-family: "Roboto Light", sans-serif;
-  /*font-weight: bolder;*/
 }
 
 .condensed,
@@ -231,35 +219,9 @@ footer p a {
   padding-left: 1vw;
 }
 
-@media only screen and (max-width: 600px) {
-
-}
-
-@media only screen and (min-width: 601) and (max-width: 992px) {
-  #portfolio-container {
-    top: -130px;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-
-}
-
 .parallax-container {
   height: 25vh !important;
 }
-
-/*@media only screen and (min-width: 600px) {
-  .flow-text {
-    font-size: 1.4rem !important;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  .flow-text {
-    font-size: 1.5rem !important;
-  }
-}*/
 
 .dropdown-content {
   background-color: #00202B !important;

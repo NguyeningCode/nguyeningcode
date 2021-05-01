@@ -16,7 +16,7 @@
   content: " ";
   width: 3px;
   /*background-color: #eeeeee;*/
-  background-color: #546e7a;
+  background-color: #1078ce;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -51,12 +51,12 @@
   float: left;
   /*border: 1px solid #d4d4d4;*/
   /*border: 1px solid #FFFFFF;*/
-  border: 1px solid #546e7a;
+  border: 1px solid #1078ce;
 /*   background-color: #FFFFFF; */
-  background-color: #546e7a !important;
+  background-color: #1078ce !important;
   font-family: "Roboto" !important;
   font-weight: normal !important;
-  border-radius: 2px;
+  border-radius: 15px;
   padding: 20px;
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -88,11 +88,11 @@
   right: -15px;
   display: inline-block;
   border-top: 15px solid transparent;
-  border-left: 15px solid #546e7a;
-  border-right: 0 solid #546e7a;
+  border-left: 15px solid #1078ce;
+  border-right: 0 solid #1078ce;
   border-bottom: 15px solid transparent;
   content: " ";
-  /*background-color: #546e7a !important;*/
+  /*background-color: #1078ce !important;*/
 }
 
 .timeline > li > .timeline-panel:after {
@@ -101,11 +101,11 @@
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #546e7a;
-  border-right: 0 solid #546e7a;
+  border-left: 14px solid #1078ce;
+  border-right: 0 solid #1078ce;
   border-bottom: 14px solid transparent;
   content: " ";
-  /*background-color: #546e7a !important;*/
+  /*background-color: #1078ce !important;*/
 }
 
 .timeline > li > .timeline-badge {
@@ -143,10 +143,6 @@
   border-right-width: 14px;
   left: -14px;
   right: auto;
-}
-
-.timeline-badge i {
-  vertical-align: sub;
 }
 
 .timeline-badge.primary {
@@ -189,16 +185,41 @@
   color: white;
 }
 
-.timeline-desc > p,
 .text-muted {
-  /*color: #507D7A !important;*/
+  color: #c7c7c9 !important;
+}
+
+.timeline-desc > p,
+.timeline-desc > ul > li {
   color: white;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.modal {
+  border-radius: 15px;
+}
+
+.modal-content > .row > .col {
+  height: auto;
+  display: flex;
 }
 
 
 .modal-content, .modal-footer {
-  background-color: #546e7a !important;
+  background-color: #1078ce !important;
 }
+
+.modal-content > a > img {
+  max-width: 300px;
+  display: block;
+  margin: 5vh auto;
+}
+
+.modal-content .row img {
+  width: 100% !important;
+}
+
 /* Written by me to make it mobile friendly :) */
 
 @media (max-width: 992px) {

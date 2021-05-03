@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.ajax({
-		url: 'https://api.github.com/repos/jnguyen7410/NguyeningCode',
+		url: 'https://api.github.com/repos/NguyeningCode/NguyeningCode',
 		type: 'GET',
 		dataType: 'json',
 		contentType: "application/json",
@@ -15,22 +15,22 @@ $(document).ready(function () {
 		}
 	});
 	$.ajax({
-		url: 'https://api.github.com/repos/jnguyen7410/Give-N-Take',
+		url: 'https://api.github.com/repos/jnguyen7410/road_to_flutter',
 		type: 'GET',
 		dataType: 'json',
 		contentType: "application/json",
 		success: function (data) {
-			var GnT_lastUpdated = data.pushed_at;
-			var dateFinal = new Date(GnT_lastUpdated);
-			var date = GnT_lastUpdated.substring(0, 10);
-			var time = GnT_lastUpdated.substring(11, 19);
-			if (document.getElementById("GnT_lastUpdated") != null) {
-				document.getElementById("GnT_lastUpdated").innerHTML = "Updated: " + dateFinal.toLocaleString();
+			var RtF_lastUpdated = data.pushed_at;
+			var dateFinal = new Date(RtF_lastUpdated);
+			var date = RtF_lastUpdated.substring(0, 10);
+			var time = RtF_lastUpdated.substring(11, 19);
+			if (document.getElementById("RtF_lastUpdated") != null) {
+				document.getElementById("RtF_lastUpdated").innerHTML = "Updated: " + dateFinal.toLocaleString();
 			}
 		}
 	});
 	$.ajax({
-		url: 'https://api.github.com/repos/jnguyen7410/NguyeningCode/stats/contributors',
+		url: 'https://api.github.com/repos/NguyeningCode/NguyeningCode/stats/contributors',
 		type: 'GET',
 		dataType: 'json',
 		contentType: "application/json",
@@ -43,15 +43,15 @@ $(document).ready(function () {
 		}
 	});
 	$.ajax({
-		url: 'https://api.github.com/repos/jnguyen7410/Give-N-Take/stats/contributors',
+		url: 'https://api.github.com/repos/jnguyen7410/road_to_flutter/stats/contributors',
 		type: 'GET',
 		dataType: 'json',
 		contentType: "application/json",
 		success: function (data) {
-			var GnT_commits = data[0].total;
+			var RtF_commits = data[0].total;
 
-			if (document.getElementById("GnT_commits") != null) {
-				document.getElementById("GnT_commits").innerHTML = GnT_commits + " COMMITS";
+			if (document.getElementById("RtF_commits") != null) {
+				document.getElementById("RtF_commits").innerHTML = RtF_commits + " COMMITS";
 			}
 		}
 	});

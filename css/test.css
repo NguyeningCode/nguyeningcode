@@ -95,6 +95,16 @@ table tr td {
   background-color: #00202B !important;
 }
 
+.resume-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card {
+  height: 33vh;
+}
+
 /* label color */
  .input-field label {
    color: #000;

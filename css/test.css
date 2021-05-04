@@ -102,7 +102,7 @@ table tr td {
 }
 
 .project-card {
-  height: 33vh;
+  height: clamp(25vh, 25vh, 33vh);
 }
 
 /* label color */

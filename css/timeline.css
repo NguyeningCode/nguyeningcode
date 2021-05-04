@@ -182,7 +182,7 @@
 
 .timeline-desc > h5,
 .modal-footer > a {
-  color: white;
+  color: black;
 }
 
 .text-muted {
@@ -191,7 +191,7 @@
 
 .timeline-desc > p,
 .timeline-desc > ul > li {
-  color: white;
+  color: black;
   margin-top: 5px;
   font-size: 18px;
 }
@@ -207,11 +207,12 @@
 
 
 .modal-content, .modal-footer {
-  background-color: #1078ce !important;
+  background-color: #ffffff !important;
+  color: black !important;
 }
 
 .modal-content > a > img {
-  max-width: 300px;
+  width: clamp(50px, 20vw, 200px);
   display: block;
   margin: 5vh auto;
 }
